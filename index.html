@@ -10,18 +10,75 @@
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header id="header">
-        <div class="company-logo-div">
+    <header class="flex" id="header">
+        <div class="company-logo-div flex">
             <img src="images/manta-ray.png" alt="Company Logo - Tribal Turtle" id="header-img" class="company-logo-img">
-            <h1 class="company-logo-text">Raya <span class="logo-surfboards">Surfboards</span></h1>
+            <h1 class="company-logo-text flex">Raya <span class="logo-surfboards">Surfboards</span></h1>
         </div>
         <nav id="nav-bar">
-            <ul>
+            <ul class="flex">
                 <li><a class="nav-link" href="#">link 1</a></li>
                 <li><a class="nav-link" href="#">link 2</a></li>
                 <li><a class="nav-link" href="#">link 3</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="featured-products">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-div flex">
+                <div class="product-card">
+                    <div class="product-img-div">
+                        <img src="images/raya-longboard-turquoise.png" class="product-img" alt="Raya turquoise longboard model">
+                    </div>
+                    <div class="product-info-div">
+                        <h3>Raya Stingray</h3>
+                        <ul>
+                            <li>8'4" Malibú</li>
+                            <li>Balsa Wood</li>
+                        </ul>
+                        <button class="product-details-btn">
+                            Check it out !
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-div">
+                        <img src="images/raya-longboard-pink.png" class="product-img" alt="Raya pink longboard model">
+                    </div>
+                    <div class="product-info-div">
+                        <h3>Raya Manta</h3>
+                        <ul>
+                            <li>9'6" Longboard</li>
+                            <li>Kiri Wood</li>
+                        </ul>
+                        <button class="product-details-btn">
+                            Check it out !
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="product-card">
+                    <div class="product-img-div">
+                        <img src="images/raya-evolutiva.png" class="product-img" alt="Raya evolutiva model">
+                    </div>
+                    <div class="product-info-div">
+                        <h3>Raya Electric</h3>
+                        <ul>
+                            <li>6'6" Hybrid</li>
+                            <li>Cedar Wood</li>
+                        </ul>
+                        <button class="product-details-btn">
+                            Check it out !
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
