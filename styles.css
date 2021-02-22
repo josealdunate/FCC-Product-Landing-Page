@@ -46,10 +46,10 @@ section#hero,
 section#hero {
     width: 100%;
     min-height: 100vh;
-    background-image: url(images/pexels-jess-vide-5231685-2.jpg);
+    background-image: url(images/pexels-jess-vide-4321539-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 15%;
+    background-position: 50% 70%;
     padding: 2rem 5vw;
 }
 
@@ -93,17 +93,20 @@ nav li {
     left: 2rem;
 }
 
-.hero-content {
-    width: 65%;
-    padding: 4rem 0rem 3rem 13rem;
+.hero__content-text {
+    width: 100%;
+    padding: 4rem 0rem 1rem 13rem;
     position: relative;
     font-family: 'Shippori Mincho', serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
     text-indent: 2rem;
 }
+.hero__content-div {
+    width: 60%;
+}
 
-.hero-content::before {
+.hero__content-text::before {
     content: '';
     height: 30%;
     width: 50%;
@@ -119,14 +122,24 @@ nav li {
 }
 
 .hero__cta-btn {
-    display: block;
-    margin: auto;
+    float: right;
     padding: 1rem 4rem;
     font-size: 1rem;
     background:#c86971;
     border: 1px solid white;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
+
+
+
+.hero__img {
+   height: 70vh;
+   position: absolute;
+   bottom: 4rem;
+   right: 8rem;
+
+}
+
 
 
 .hero-form {
