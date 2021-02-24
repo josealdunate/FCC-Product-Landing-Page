@@ -8,11 +8,19 @@
   box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 nav ul,
 nav li,
 .company-logo-text {
  margin: 0;
+}
+
+main {
+    position: relative;
 }
 
 ul {
@@ -32,33 +40,26 @@ a {
 .section-title {
     text-align: center;
 }
-
 /* ############################
--------- HERO SECTION ---------
+-------- PAGE HEADING ---------
 ############################ */
 
-section#hero, 
-.nav-link,
-.hero__cta-btn {
-    color: white;
-}
-
-section#hero {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(images/pexels-jess-vide-4321539-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 70%;
-    padding: 2rem 5vw;
-}
-
 .page-header {
-    height: 35vh;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-bar {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 5vw;
 }
 
 nav ul {
-    justify-content: flex-end;
+    position: sticky;
+    top: 1rem;
 }
 
 nav li {
@@ -69,10 +70,12 @@ nav li {
 
 .company-logo-div {
     position: relative;
-    top: 3rem;
-    left: 3rem;
+    width: fit-content;
+    top: 10em;
+    left: 5vw;
     flex-direction: row;
     align-items: flex-start;
+    color: white;
 }
 
 .company-logo-img {
@@ -93,51 +96,69 @@ nav li {
     left: 2rem;
 }
 
-.hero__content-text {
+/* ############################
+-------- HERO SECTION ---------
+############################ */
+
+section#hero, 
+.nav-link,
+.hero__cta-btn {
+    color: white;
+}
+
+section#hero {
     width: 100%;
-    padding: 4rem 0rem 1rem 13rem;
+    min-height: 100vh;
+    padding: 7rem 5vw 0rem 5vw;
+    align-items: center; 
+    background-image: url(images/pexels-jess-vide-4321539-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+}
+
+.hero__content-div {
+    width: 65%;
+    padding: 10rem 0 0 6vw;
+}
+
+.hero__content-text {
     position: relative;
     font-family: 'Shippori Mincho', serif;
     font-size: 1.1rem;
     text-align: justify;
     text-indent: 2rem;
 }
-.hero__content-div {
-    width: 60%;
-}
 
 .hero__content-text::before {
     content: '';
+    position: absolute;
     height: 30%;
     width: 50%;
-    position: absolute;
-    top: 20%;
-    left: 20%;
+    top: -50%;
+    left: -5%;
     border-top: 1px solid white;
     border-left: 1px solid white;
 }
 
-.hero__cta-btn-div {
-    margin: 4rem;
+.hero__img-div {
+    width: 35%;
+}
+
+.hero__img {
+    display: block;
+    max-width: 60%;
+    margin: auto;
 }
 
 .hero__cta-btn {
     float: right;
     padding: 1rem 4rem;
+    margin: 4rem;
     font-size: 1rem;
     background:#c86971;
     border: 1px solid white;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-}
-
-
-
-.hero__img {
-   height: 70vh;
-   position: absolute;
-   bottom: 4rem;
-   right: 8rem;
-
 }
 
 
@@ -238,6 +259,23 @@ section#featured-products {
     border-radius: 1.6rem;
     color: white;
     font-weight: 600;
+}
+
+/* #################################
+---------- In Action ---------------
+################################# */
+
+section#in-action {
+    padding: 5rem 0rem;
+}
+
+.video-figure {
+    width: 70%;
+    margin: auto;
+}
+
+.video {
+    width: 100%;
 }
 
 /* #################################

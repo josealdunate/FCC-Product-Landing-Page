@@ -12,13 +12,13 @@
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <section id="hero">
+    <main>
         <header class="page-header" id="header">
-            <nav id="nav-bar">
+            <nav id="nav-bar" class="nav-bar">
                 <ul class="flex">
-                    <li><a class="nav-link" href="#">link 1</a></li>
-                    <li><a class="nav-link" href="#">link 2</a></li>
-                    <li><a class="nav-link" href="#">link 3</a></li>
+                    <li><a class="nav-link" href="#benefits">Benefits</a></li>
+                    <li><a class="nav-link" href="#in-action">In Action</a></li>
+                    <li><a class="nav-link" href="#featured-products">Featured Products</a></li>
                 </ul>
             </nav>
             <div class="company-logo-div flex">
@@ -26,25 +26,27 @@
                 <h1 class="company-logo-text flex">Raya <span class="logo-surfboards">Surfboards</span></h1>
             </div>
         </header>
-        <div class="flex">
+        <section id="hero" class="flex">
             <div class="hero__content-div">
-                <div class="hero__content-text">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, omnis! Unde explicabo, similique quae temporibus numquam debitis! Amet, porro quos possimus omnis molestias rerum nobis, minus temporibus ex eveniet culpa dicta necessitatibus ipsum repudiandae facilis voluptas? Deleniti ea officia natus!
-                    </p>
-                </div>
-                <div class="hero__cta-btn-div">
-                    <button class="hero__cta-btn">Find The Raya For You</button>
-                </div>
+                <p class="hero__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam neque recusandae adipisci sit aliquam. Molestiae reiciendis obcaecati vel cum maxime quidem est sed! Vero eligendi consequatur a perferendis officiis!
+                </p>
+                <button class="hero__cta-btn">Find The Raya For You</button>
             </div>
-            <div>
+            <div class="hero__img-div">
                 <img class="hero__img" src="images/raya-hero-products.png" alt="Raya main product image">
             </div>
-        </div>
-        
-        
-            <!--
-            <form class="hero-form" action="#">
+        </section>
+        <section id="benefits">
+            <header>
+                <h2>What Really Matters When Buying A Surfboard</h2>
+            </header>
+        </section>
+        <section id="call-to-action">
+            <header>
+                <h2>Find Your Raya</h2>
+            </header>
+            <form class="hero-form" id="form" action="https://www.freecodecamp.com/email-submit">
                 <h2 class="hero-form__heading">Find The Raya For You</h2>
                 <div class="hero-form__inputs-group">
                     <label for="name">Name</label>
@@ -63,12 +65,10 @@
                         <option value="advanced">Advanced</option>
                         <option value="expert">Expert</option>
                     </select>
-                    <button class="hero-form__btn" type="submit">Show me what you got !</button>
+                    <input type="submit" id="submit" value="Show me what you got !" class="hero-form__btn">
                 </div>
             </form>
-            -->
-    </section>
-    <main>
+        </section>
         <section id="vision" class="flex">
             <div class="vision__img-div">
                 <img class="vision__img" src="images/pexels-jess-vide-4603880.jpg" alt="hola">
@@ -82,6 +82,12 @@
                 <h3>World Wide Shipping</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magni quae, suscipit corrupti consequatur, incidunt voluptas iure voluptatem tenetur dignissimos quia tempore natus eius et voluptates saepe vel?</p>
             </div>
+        </section>
+        <section id="in-action">
+            <figure class="video-figure">
+                <video id="video" class="video" controls src="videos/pexels-jess-vide-5504929.mp4">Your browser does not support the video</video>
+                <figcaption>Video shot by Jess Vide on Pexels</figcaption>
+            </figure>
         </section>
         <section id="featured-products">
             <h2 class="section-title">Featured Products</h2>
