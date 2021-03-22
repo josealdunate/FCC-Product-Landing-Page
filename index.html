@@ -7,92 +7,106 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=RocknRoll+One&family=Shippori+Mincho+B1:wght@400;700&family=Ultra&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/667bd5a776.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>FCC: Product Landing Page</title>
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <main>
-        <header class="page-header" id="header">
+        <header class="page-header flex" id="header">
             <nav id="nav-bar" class="nav-bar">
                 <ul class="flex">
-                    <li><a class="nav-link" href="#benefits">Benefits</a></li>
-                    <li><a class="nav-link" href="#in-action">In Action</a></li>
-                    <li><a class="nav-link" href="#featured-products">Featured Products</a></li>
+                    <li class="nav-link-border"><a class="nav-link" href="#benefits">Advantages</a></li>
+                    <li class="nav-link-border"><a class="nav-link" href="#in-action">Concept</a></li>
+                    <li><a class="nav-link" href="#featured-products">Products</a></li>
                 </ul>
             </nav>
-            <div class="company-logo-div flex">
-                <img src="images/manta-ray.png" alt="Company Logo - Tribal Turtle" id="header-img" class="company-logo-img">
-                <h1 class="company-logo-text flex">Raya <span class="logo-surfboards">Surfboards</span></h1>
+            <div class="logo-div logo-div--small flex">
+                <img src="images/manta-ray.png" alt="Company Logo - Tribal Turtle" id="header-img" class="logo-img logo-img--small">
+                <h1 class="logo-text logo-text--small flex">Raya <span class="logo-surfboards logo-surfboards--small">Surfboards</span></h1>
             </div>
         </header>
         <section id="hero" class="flex">
             <div class="hero__content-div">
-                <p class="hero__content-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam neque recusandae adipisci sit aliquam. Molestiae reiciendis obcaecati vel cum maxime quidem est sed! Vero eligendi consequatur a perferendis officiis!
-                </p>
-                <button class="hero__cta-btn">Find The Raya For You</button>
+                <div class="logo-div hero__logo flex">
+                    <img src="images/manta-ray.png" alt="Company Logo - Tribal Turtle" class="logo-img">
+                    <h2 class="logo-text flex">Raya <span class="logo-surfboards">Surfboards</span></h2>
+                </div>
+                <div class="flex hero__flex-div">
+                    <div class="hero__text-div">
+                        <p class="hero__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam neque recusandae adipisci sit aliquam. Molestiae reiciendis obcaecati vel cum maxime quidem est sed! Vero eligendi consequatur a perferendis officiis!
+                        </p>
+                    </div>
+                    <div class="hero__img-div">
+                        <img class="hero__img" src="images/raya-hero-products.png" alt="Raya main product image">
+                    </div>
+                </div>
+                <button class="cta-btn cta-btn--hero">Find The Raya For You</button>
             </div>
-            <div class="hero__img-div">
-                <img class="hero__img" src="images/raya-hero-products.png" alt="Raya main product image">
-            </div>
+            <small class="caption hero-background-caption"><strong>Jess Vide</strong> on <a href="https://www.pexels.com/@jess-vide" target="_blank" class="caption-link">Pexels.com</a></small>
         </section>
         <section id="benefits">
-            <header>
-                <h2>What Really Matters When Buying A Surfboard</h2>
+            <header class="benefits__header">
+                <h2 class="benefits__heading">What Really Matters</h2>
             </header>
-        </section>
-        <section id="call-to-action">
-            <header>
-                <h2>Find Your Raya</h2>
-            </header>
-            <form class="hero-form" id="form" action="https://www.freecodecamp.com/email-submit">
-                <h2 class="hero-form__heading">Find The Raya For You</h2>
-                <div class="hero-form__inputs-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="hero-form__control" placeholder="John Doe" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="hero-form__control" placeholder="johndoe@example.com" required>
-                    <label for="height">Height</label>
-                    <input type="number" name="height" id="height" class="hero-form__control">
-                    <label for="weight">Weight</label>
-                    <input type="number" name="weight" id="weight" class="hero-form__control">
-                    <label for="skill">Skill Level</label>
-                    <select class="hero-form__control" name="skill" id="skill">
-                        <option value="" disabled selected>Select Your Skill</option>
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="advanced">Advanced</option>
-                        <option value="expert">Expert</option>
-                    </select>
-                    <input type="submit" id="submit" value="Show me what you got !" class="hero-form__btn">
+            <div class="flex benefits__flex-div">
+                <figure class="benefits__figure">
+                    <div class="benefits__gallery-div flex">
+                        <img class=" benefits__img-1 picture-frame" src="images/pexels-jess-vide-5008642.jpg" alt="Woman in bikini smiling to the camera on a beach in Hawaii with a surfboard on her knees">
+                        <img class="benefits__img-2 picture-frame" src="images/pexels-jess-vide-4603873.jpg" alt="Hawaiian beach: sea, sand, rocks, tropical bush, palm trees">
+                    </div>
+                    <figcaption class="benefits__figcaption">
+                        <small class="caption-dark"><strong>Jess Vide</strong> on <a href="https://www.pexels.com/@jess-vide" target="_blank" class="caption-link">Pexels.com</a></small>
+                    </figcaption>
+                </figure>
+                <div class="benefits__content-div">
+                    <div class="benefits__columns-display">
+                        <div class="benefits__content-box">
+                            <div class="flex benefits__content-box__heading">
+                                <i class="benefits__content-box__icon fas fa-feather-alt"></i>
+                                <h3 class="benefits__subheading">Lightwight</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium molestiae nesciunt, eius ipsum at temporibus quaerat?</p>
+                        </div>
+                        <div class="benefits__content-box">
+                            <div class="flex benefits__content-box__heading">
+                                <i class="benefits__content-box__icon fas fa-tools"></i>
+                                <h3 class="benefits__subheading">Durable</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aperiam quas labore perferendis porro expedita.</p>
+                        </div>
+                        <div class="benefits__content-box">
+                            <div class="flex benefits__content-box__heading">
+                                <i class="benefits__content-box__icon fas fa-recycle"></i>
+                                <h3 class="benefits__subheading">Eco-Friendly</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo adipisci magnam quos quia temporibus, minima quas.</p>
+                        </div>
+                    </div>
                 </div>
-            </form>
-        </section>
-        <section id="vision" class="flex">
-            <div class="vision__img-div">
-                <img class="vision__img" src="images/pexels-jess-vide-4603880.jpg" alt="hola">
             </div>
-            <div class="vision__content-div">
-                <h2 class="section-title">Raya Mission</h2>
-                <h3>Sustainability</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cumque deleniti et impedit saepe necessitatibus, ut commodi aliquam voluptatem iusto!</p>
-                <h3>Handcrafted</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut beatae quam laudantium dignissimos quo asperiores sed expedita odio, reiciendis nemo fuga unde alias, quisquam consectetur consequuntur aliquam rem repudiandae harum soluta! Necessitatibus, deserunt at! Perspiciatis laboriosam recusandae debitis iste?</p>
-                <h3>World Wide Shipping</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magni quae, suscipit corrupti consequatur, incidunt voluptas iure voluptatem tenetur dignissimos quia tempore natus eius et voluptates saepe vel?</p>
-            </div>
+            
         </section>
         <section id="in-action">
             <figure class="video-figure">
-                <video id="video" class="video" controls src="videos/pexels-jess-vide-5504929.mp4">Your browser does not support the video</video>
-                <figcaption>Video shot by Jess Vide on Pexels</figcaption>
+                <div class="video-background picture-frame">
+                    <video id="video" class="video" src="videos/pexels-jess-vide-5504929.mp4" loop autoplay>Your browser does not support the video</video>
+                </div>
+                <figcaption class="video-caption">
+                    <small class="caption-dark"><strong>Jess Vide</strong> on <a href="https://www.pexels.com/@jess-vide" target="_blank" class="caption-link">Pexels.com</a></small>
+                </figcaption>
             </figure>
+            <div class="video-quote-div flex">
+                <p class="video-quote"><em>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum deserunt magni illo pariatur impedit!</em></p>
+            </div>
         </section>
         <section id="featured-products">
             <h2 class="section-title">Featured Products</h2>
             <div class="products-div flex">
-                <div class="product-card">
+                <div class="product-card picture-frame flex">
                     <div class="product-img-div">
                         <img src="images/raya-longboard-turquoise.png" class="product-img" alt="Raya turquoise longboard model">
                     </div>
@@ -107,7 +121,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card picture-frame flex">
                     <div class="product-img-div">
                         <img src="images/raya-longboard-pink.png" class="product-img" alt="Raya pink longboard model">
                     </div>
@@ -123,7 +137,7 @@
                     </div>
                     
                 </div>
-                <div class="product-card">
+                <div class="product-card picture-frame flex">
                     <div class="product-img-div">
                         <img src="images/raya-evolutiva.png" class="product-img" alt="Raya evolutiva model">
                     </div>
@@ -141,9 +155,59 @@
                 </div>
             </div>
         </section>
+        <section id="call-to-action" class="flex">
+            <div class="cta__content-div">
+                <header class="cta__heading">
+                    <h2 >Chosing The Right Raya</h2>
+                </header>
+                <h3>Surboard Volume</h3>
+                <p class="cta__content-div__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptate doloribus dignissimos dolorem veritatis dolorum ducimus quaerat. Quos, ut dolorem! Tempora fuga possimus porro non.</p>
+                <p class="cta__content-div__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos numquam sed aut sit, placeat aperiam voluptate veritatis soluta totam!</p>
+            </div>
+            <div class="cta__form-div">
+                <form class="cta-form picture-frame" id="form" action="https://www.freecodecamp.com/email-submit">
+                    <h3>Find The Raya For You</h3>
+                    <div class="flex cta__form-flex">
+                        <div class="cta__form-client-info">
+                            <label class="cta-form__label" for="name"><strong>Name</strong></label>
+                            <input type="text" name="name" id="name" class="cta-form__control" placeholder="John Doe" required>
+                            <label class="cta-form__label" for="email"><strong>Email</strong></label>
+                            <input type="email" name="email" id="email" class="cta-form__control" placeholder="johndoe@example.com" required>
+                        </div>
+                        <div class="cta__form-client-skill">
+                            <div class="flex cta-form__height-weight-div">
+                                <div class="cta-form__height-div">
+                                    <label class="cta-form__label" for="height">Height</label>
+                                    <input type="number" name="height" id="height" class="cta-form__control">
+                                </div>
+                                <div class="cta-form__weight-div">
+                                    <label class="cta-form__label" for="weight">Weight</label>
+                                    <input type="number" name="weight" id="weight" class="cta-form__control">
+                                </div>
+                            </div>
+                            <label class="cta-form__label" for="skill">Skill Level</label>
+                            <select class="cta-form__control" name="skill" id="skill">
+                                <option value="" disabled selected>Select Your Skill</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="expert">Expert</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" id="submit" value="Find Me A Raya !" class="cta-btn cta-btn--form">
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <hr>
+        <p><small>This is the 3<sup>rd</sup> of five <a target="_blank" href="https://freecodecamp.org">Free Code Camp</a>'s Responsive Web Design project: Product Landing Page.</small></p>
+        <div class="prev-next-projects">
+            <p class="prev-project"><small><a href="https://josealdunate.github.io/FCC-Survey-Form/">&laquo; Survey Form</a></small></a>
+            <p class="next-project"><small><a href="#">Technical Documentation Page &raquo;</a></small></p>
+        </div>
+        <p class="developer"><small>Developed by <a href="https://github.com/josealdunate">José Ignacio Aldunate</a></small></p>
     </footer>
 </body>
 </html>
