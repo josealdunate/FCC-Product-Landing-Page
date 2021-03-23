@@ -1,0 +1,11 @@
+name: fontawesome
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: fontawesome-key
+        run: |
+          echo $SECURE_KEY
+        env: 
+          SECURE_KEY: ${{ secrets.FONT_AWESOME_KIT }}
