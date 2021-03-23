@@ -49,6 +49,8 @@ h2 {
     font-size: 2rem;
 }
 
+
+
 h3 {
     font-family: 'RocknRoll One', sans-serif;
 }
@@ -86,6 +88,16 @@ footer p {
     li,
     label {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
     }
 }
 
@@ -160,9 +172,24 @@ footer p {
 
 @media (max-width: 800px) {
     .logo-img {
-        width: 16vw;
-        top: 1.5vw;
-        left: 3vw;
+        width: 10vw;
+        top: 0;
+        left: 2vw;
+    }
+    
+    .logo-text {
+        font-size: 5.5vw;
+    }
+
+    .logo-surfboards {
+        text-indent: 3vw;
+    }
+}
+@media (max-width: 500px) {
+    .logo-img {
+        width: 14vw;
+        top: 1vw;
+        left: 2vw;
     }
     
     .logo-text {
@@ -227,6 +254,12 @@ footer p {
 .nav-link-border {
     border-right: 1px solid white;
     padding: 0.3rem;
+}
+
+@media (max-width: 500px) {
+    .page-header {
+        display: none;
+    }
 }
 
 
@@ -340,7 +373,7 @@ section#hero {
 (max-width: 800px) {
     
     section#hero {
-        padding: 3rem 10vw 5rem 10vw;
+        padding: 2rem 10vw 5rem 10vw;
         background-position: 30% 70%;
     }
     
@@ -382,6 +415,12 @@ section#hero {
 }
 
 @media (max-width: 500px) {
+
+    section#hero {
+        position: static;
+        padding: 1rem 10vw 5rem 10vw;
+    }
+
     .hero__text {
         font-size: 0.85rem;
     }
@@ -816,6 +855,15 @@ footer p {
     padding: 0.2rem 1rem;
     margin: 0.3rem 0rem;
 }
+
+.prev-project {
+    text-align: right;
+}
+
+.next-project {
+    text-align: left;
+}
+
 .prev-project {
     border-right: 1px solid #cacaca;;
 }
@@ -835,9 +883,24 @@ footer a:hover {
     margin-top: 1.5rem;
 }
 
+@media (max-width: 500px) {
+
+    .prev-next-projects {
+        padding: 1rem 0;
+    }
+
+    .prev-project {
+        width: 40%;
+    }
+
+    .next-project {
+        width: 60%;
+    }
+}
 
 
 @media (min-width: 1500px) {
+
     :root {
         font-size: 1.1vw;
     }
