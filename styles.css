@@ -124,8 +124,6 @@ footer p {
     border: 1px solid white;
 }
 
-
-
 .cta-btn--form {
     padding: 0.7rem 2rem;
     margin: 2rem 0rem 1rem 0rem;
@@ -159,7 +157,6 @@ footer p {
 .logo-surfboards {
     text-indent: 2rem;
 }
-
 
 @media (max-width: 800px) {
     .logo-img {
@@ -330,7 +327,6 @@ section#hero {
     }
 }
 
-
 @media (max-width: 1100px) and (orientation: landscape),
 (max-width: 800px) {
 
@@ -342,6 +338,7 @@ section#hero {
 
 @media (max-width: 1200px) and (orientation: portrait),
 (max-width: 800px) {
+    
     section#hero {
         padding: 3rem 10vw 5rem 10vw;
         background-position: 30% 70%;
@@ -355,7 +352,6 @@ section#hero {
     .hero__logo {
         position: relative;
         justify-content: center;
-
     }
 
     .hero__text-div {
@@ -389,15 +385,7 @@ section#hero {
     .hero__text {
         font-size: 0.85rem;
     }
-
-    .hero__text::before {
-        display: none;
-    }
-
-    
 }
-
-
 
 
 /* ############################
@@ -474,6 +462,11 @@ section#benefits {
 }
 
 @media (max-width: 1000px) {
+    
+    section#benefits {
+        padding: 0 8vw 5vw 8vw;
+    }
+
     .benefits__header,
     .benefits__content-div
      {
@@ -597,6 +590,11 @@ section#in-action {
     text-align: center;
 }
 
+@media (max-width: 800px) {
+    .video-quote {
+        font-size: 1.25rem;
+    }
+}
 
 /* #################################
 -------- FEATURED PRODUCTS ---------
@@ -612,7 +610,9 @@ section#featured-products {
 }
 
 .product-card {
-    margin: 2rem 1.5rem;
+    padding-bottom: 1rem ;
+    width: 28%;
+    margin: 2rem 0;
     text-align: center;
     background-color: rgb(245, 244, 241);
     flex-direction: column;
@@ -620,7 +620,7 @@ section#featured-products {
 
 .product-img-div {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 4vw;
 }
 
 .product-img {
@@ -630,7 +630,6 @@ section#featured-products {
 
 .product-details-btn {
     padding: 0.8rem 2rem;
-    margin: 1rem auto;
     background: rgb(24, 165, 170);
     border: none;
     border-radius: 1.6rem;
@@ -639,24 +638,16 @@ section#featured-products {
 }
 
 @media (max-width: 1140px) {
-
-    .product-card {
-        margin: 2rem 1rem;
-    }
-
     .product-img {
         height: 13rem;
     }
-
-    .product-img-div {
-        padding: 1rem 4vw;
-    }
 }
 
-@media (max-width: 800px) and (min-width: 500px) {
+@media (max-width: 800px) and (min-width: 450px) {
     .product-card {
+        width: 75%;
         margin: 1rem auto;
-        padding: 1rem 3rem;
+        padding: 1rem 3vw;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -664,6 +655,7 @@ section#featured-products {
 
     .product-img-div {
         width: 45%;
+        padding: 0;
     }
 
     .product-info-div {
@@ -671,7 +663,11 @@ section#featured-products {
     }
 }
 
-
+@media (max-width: 450px) {
+    .product-card {
+        width: 80%;
+    }
+}
 
 /* #################################
 ---------- CALL TO ACTION ----------
@@ -768,7 +764,6 @@ justify-content: space-between;
         flex-direction: row;
         justify-content: space-between;
     }
-
      
     .cta__form-client-info,
     .cta__form-client-skill {
