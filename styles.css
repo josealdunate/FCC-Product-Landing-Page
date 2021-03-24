@@ -748,16 +748,20 @@ section#featured-products {
 ################################# */
 
 section#call-to-action {
-    align-items: center;
-    justify-content: space-between;
-    padding: 10rem 6vw 20rem 6vw;
+    padding: 10rem 6vw 18rem 6vw;
     background: 
         linear-gradient(0deg, rgba(0, 0, 0, 0.6) 10%, rgba(18, 55, 66, 0.4) 40%, rgba(18, 55, 66, 0) 80%),
-        url(images/pexels-damon-hall-1705253-2.jpg);
+        url(images/pexels-oliver-sjöström-931018-2.jpg);
     background-size: cover;
-    background-position: 50% 30%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     position: relative;
+}
+
+.cta__flex-div {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
 }
 
 .cta__content-div {
@@ -816,8 +820,13 @@ justify-content: space-between;
     flex-direction: column;
 }
 
+.cta-background-caption {
+    padding-top: 1rem;
+}
+
+
 @media (max-width: 990px) {
-    section#call-to-action {
+    .cta__flex-div {
         flex-direction: column;
     }
 
